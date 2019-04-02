@@ -3,3 +3,5 @@
 
 # Redirect default Netlify subdomain to primary domain
 http://agitated-yalow-19e180.netlify.com/* http://charlpotgieter.com/:splat 301!
+
+/* /index.html 200
