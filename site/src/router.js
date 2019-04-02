@@ -12,7 +12,9 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home,
-      title: 'Charl Potgieter'
+      meta: {
+         title: 'Charl Potgieter'
+      }
     },
     {
       path: '/about',
@@ -21,7 +23,9 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
-      title: 'Charl Potgieter - About'
+      meta: {
+         title: 'Charl Potgieter - About'
+      }
     }
   ]
 })
